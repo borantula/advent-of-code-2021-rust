@@ -1,10 +1,10 @@
 
 mod utils;
-mod day2;
+mod day3;
 
 fn main() {
-    day2::q1();   
-    day2::q2();   
+    day3::q1();   
+    // day2::q2();   
 }
 
 
