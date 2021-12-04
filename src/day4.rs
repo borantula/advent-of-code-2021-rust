@@ -5,7 +5,7 @@ pub fn q1() {
     let mut parsed = parse_by_empty_lines(&content);
     let numbers:Vec<i32> = parsed[0].split(",").map(|x| parse_int(x)).collect();
     parsed.drain(0..1);
-    // let boards:Vec<&str> = parsed;
+
     let boards:Vec<Vec<&str>> = parsed.iter()
                                           .map(|x| content_to_lines(x) )
                                           .collect();
@@ -41,7 +41,7 @@ pub fn q2() {
     let mut parsed = parse_by_empty_lines(&content);
     let numbers:Vec<i32> = parsed[0].split(",").map(|x| parse_int(x)).collect();
     parsed.drain(0..1);
-    // let boards:Vec<&str> = parsed;
+    
     let boards:Vec<Vec<&str>> = parsed.iter()
                                           .map(|x| content_to_lines(x) )
                                           .collect();
